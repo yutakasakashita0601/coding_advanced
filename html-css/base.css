@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.header {
+	width: 100%;
+	background-color: lightgray !important;
+}
+  
+.navbar-brand {
+	font-size: 30px !important;
+}
+  
+
+.nav-container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav {
+	  margin-left: auto;
+	}
+  
+	.form-control {
+	  max-width: 400px;
+	  width: auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-nav {
+	  text-align: center;
+	}
+  
+	.form-inline {  
+	  display: flex;
+	}
+  
+	.form-control {
+	  width: 100%;
+	  flex-grow: 1;
+	  max-width: none;
+	}
+  
+	.custom-search-btn {
+	  width: auto;
+	}
+}
+  
+.custom-search-btn {
+	width: auto;
+	background-color: #DDDDDD !important;
+	border: none;
+	border-radius: 5px;
+	margin: 0;
+}
+  
+.custom-search-btn:hover {
+	background-color: #CCCCCC;
+}
+
+.main{
+	background-color: #FFEFD5;
+	min-height: 3200px;
+	width: 100%;
+}
+
+.swiper-slide{
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	height: 500px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.text-center {
+	font-size: 35px;
+}
+
+.accordion-button::after {
+	display: none !important;
+}
+
+.accordion-button {
+	font-size: 30px !important;
+	background-color: #FFC7AF; 
+	color: black;
+	border: none !important;
+	border-radius: 0 !important;
+}
+  
+.accordion-button.collapsed {
+	background-color: #FFC7AF;
+}
+  
+.accordion-body {
+	font-size:  20px !important;
+	line-height: 2.5;
+    background-color: #FFEFD5;
+	border: none !important;
+    box-shadow: none !important;
+}
+  
+.accordion-item {
+	background-color: #FFEFD5;
+	border-radius: 0 !important;
+	border: none !important;
+}
+.accordion-button:focus, 
+.accordion-button:active {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+
+.accordion-button:not(.collapsed) {
+  background-color: #FFC7AF !important;
+  color: black !important;
+  border-color: #FFC7AF !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button.collapsed {
+  background-color: #FFC7AF !important;
+  color: black !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: none !important;
+}
+
+.fade-in-element {
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+  
+.fade-in-visible {
+	opacity: 1;
+}
+
+.top-text {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.right-text p {
+	font-size: 1.5rem;
+}
+
+.row.d-flex {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+}
+  
+
+.fixed-height-img {
+	width: 120%;
+	height: 300px;
+	object-fit: cover;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+  
+.col-md-6 {
+	flex: 1;
+}
+  
+.img {
+	max-width: 100%;
+	height: auto;
+}
+  
+
+.text-start {
+	text-align: left;
+}
+  
+.row .col-md-6 {
+	padding-right: 15px;
+}
+  
+.col-md-5.p-0 {
+	padding: 0;
+}
+
+.barista-container {
+	background-color: black;
+	color: white;
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+
+@media (max-width: 767px) {
+	.fade-in-element {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		min-height: 100vh;
+		padding: 0;
+	}
+	
+	.barista-container {
+		margin: 0 auto;
+		width: 80%;
+		max-width: 1200px;
+		height: auto;
+		padding: 20px;
+	}
+
+	.barista-container .row {
+	  flex-direction: column;
+	  gap: 20px;
+	}
+  
+	.barista-container .col-md-6 {
+	  order: 2;
+	}
+  
+	.barista-container .col-md-5 {
+	  order: 1;
+	}
+}
+
+.footer{
+	height: 130px;
+	width: 100%;
+	gap: 20px;
+	display: flex;
+	padding-top: 30px;
+	justify-content: center;
+	background-color: darkgray;
+}
